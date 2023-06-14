@@ -1,0 +1,18 @@
+[
+    {
+        "predicate": "any",
+        "conditions": [
+            {"field": "from_email", "predicate": "contains", "value": "@gmail.com"},
+            {"field": "subject", "predicate": "does not contain", "value": "spam"}
+        ],
+        "actions": ["mark as read"]
+    },
+    {
+        "predicate": "all",
+        "conditions": [
+            {"field": "received_at", "predicate": "less than", "value": "2023-06-15T00:00:00"},
+            {"field": "received_at", "predicate": "greater than", "value": "2023-06-14T00:00:00"}
+        ],
+        "actions": ["mark as read"]
+    }
+]
