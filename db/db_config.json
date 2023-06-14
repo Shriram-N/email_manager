@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "database": "email_manager",
+    "user": "postgres",
+    "password": "your password",
+    "port":"5432"
+}
